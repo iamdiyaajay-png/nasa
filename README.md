@@ -152,3 +152,4 @@ Member 1 exports the following contracts for platform integration:
 - **Member 2 (FastAPI Backend)**: `run_scientific_pipeline(config: InvestigationConfig, raster_data: dict) -> PipelineExecutionResult`
 - **Member 3 (MapLibre UI)**: `result.sieved_change_mask`, `result.diff_raster_db`, `result.evidence_ledger` (GeoJSON and JSON audit payload)
 - **Member 4 (Evaluation Lead)**: Output arrays, confusion matrix inputs, and threshold tuning evaluation rasters.
+
