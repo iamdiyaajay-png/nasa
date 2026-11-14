@@ -1,9 +1,10 @@
 # Project Brain: Status (`.brain/STATUS.md`)
 
 ## Current Sprint & Milestones
-- **Status**: Member 1 (Data & Scientific Intelligence) Phase 2.5 NISAR Archive & Coverage Audit Complete (`research/PHASE_2_5_NISAR_ARCHIVE_AND_COVERAGE_AUDIT.md`).
-- **Active Focus**: Ready for Phase 3 Production Data Ingestion (with Earthdata credentials) or Final Presentation Package handoff (13.5 hours remaining).
-- **Test Metric**: 94 / 94 Acceptance Tests Passing (100% success rate in 0.038s) + 13 / 13 Synthetic Scientific Tests Passing.
+- **Status**: Member 1 (Data & Scientific Intelligence) Phase 2.5 NISAR Audit & Full Integration Handoff Complete; All Files Committed to Local Repository (`commit 249bea4`).
+- **Active Focus**: Ready for Member 2 (FastAPI Backend) & Member 3 (MapLibre UI) integration handoff or Phase 3 production data ingestion (13.0 hours remaining).
+- **Test Metric**: 94 / 94 Acceptance Tests Passing (100% success rate in 0.037s) + 13 / 13 Synthetic Scientific Tests Passing.
+- **Git Status**: Working tree clean on branch `main`.
 
 ## Completed Tasks
 - [x] Phase A: PRD & Master Prompt inspection (`BHnMISnTRA_PRD.pdf`, `GEMINI.md`).
