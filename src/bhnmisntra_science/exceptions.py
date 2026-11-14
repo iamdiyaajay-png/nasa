@@ -84,3 +84,19 @@ class ProcessingError(ScientificError):
     pass
 
 
+class SliceAssemblyError(ProcessingError):
+    """Raised when Sentinel-1 along-track slice assembly fails."""
+    pass
+
+
+class SliceBoundaryGapError(SliceAssemblyError):
+    """Raised when an unobserved gap exists between along-track slices."""
+    pass
+
+
+class MissingSliceError(SliceAssemblyError):
+    """Raised when required slice data is missing in non-partial mode."""
+    pass
+
+
+

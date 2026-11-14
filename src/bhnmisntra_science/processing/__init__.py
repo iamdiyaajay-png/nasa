@@ -11,6 +11,12 @@ from .log_ratio import (
     compute_threshold,
     generate_change_mask,
 )
+from .mosaicking import (
+    assemble_abutting_slices,
+    SliceInput,
+    SlicePair,
+    AssembledRaster,
+)
 
 __all__ = [
     "calibrate_sar_array",
@@ -21,5 +27,10 @@ __all__ = [
     "create_spatial_tuning_mask",
     "compute_threshold",
     "generate_change_mask",
+    "assemble_abutting_slices",
+    "SliceInput",
+    "SlicePair",
+    "AssembledRaster",
 ]
+
 

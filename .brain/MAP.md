@@ -39,15 +39,33 @@ nasa/
 │       ├── config.py                   # Pydantic v2 metadata & parameter schemas
 │       ├── policies.py                 # Incidence angle, confounder, & classifier policies
 │       ├── pipeline.py                 # End-to-end scientific pipeline orchestrator
-│       ├── processing/                 # SAR signal processing (calibration, alignment, speckle, log-ratio)
+│       ├── processing/                 # SAR signal processing (calibration, alignment, speckle, log-ratio, mosaicking)
 │       └── beat_test/                  # Multi-temporal trajectory & re-inundation tracking
 ├── tests/
 │   ├── conftest.py                     # Synthetic test fixtures (Tier 3)
 │   ├── run_tests.py                    # Unittest discovery runner
 │   ├── test_stage1_contracts.py        # 31 contract & schema invariants tests
 │   ├── test_processing.py              # 22 signal processing & Beat Test tests
+│   ├── test_slice_assembler.py         # 17 direct abutting slice assembly tests
+│   ├── test_four_state_tracker.py      # 13 four-state temporal Beat Test tracking tests
+│   ├── test_pipeline_integration.py    # 8 Phase 2.3 pipeline integration tests
 │   └── test_pipeline_e2e.py            # 3 full-stack end-to-end pipeline tests
-├── BHnMISnTRA_PRD.pdf                  # Authoritative PRD specification
+├── research/                           # Authoritative scientific audit & specification records
+│   ├── PHASE_1_1_INDEPENDENT_AUDIT.md
+│   ├── PHASE_1_2_DATA_GATE_AUDIT.md
+│   ├── PHASE_1_3_IMPLEMENTATION_READINESS.md
+│   ├── PHASE_1_4_SCIENTIFIC_RULE_VALIDATION.md
+│   ├── PHASE_1_4_1_CORRECTION_AUDIT.md
+│   ├── PHASE_1_5_SCIENTIFIC_SPECIFICATION.md
+│   ├── PHASE_2_1_SLICE_ASSEMBLER_REPORT.md
+│   ├── PHASE_2_2_TEMPORAL_TRACKER_REPORT.md
+│   ├── PHASE_2_2_1_INDEPENDENT_AUDIT.md
+│   ├── PHASE_2_3_PIPELINE_INTEGRATION_REPORT.md
+│   ├── PHASE_2_4_REAL_DATA_SMOKE_TEST.md
+│   ├── PHASE_2_4_1_EVIDENCE_PROVENANCE_AUDIT.md
+│   └── PHASE_2_5_NISAR_ARCHIVE_AND_COVERAGE_AUDIT.md
+├── BHnMISnTRA_PRD.pdf                  # Historical PRD specification (v3)
+├── PRD.md                              # Authoritative Master PRD specification (v3.1)
 ├── GEMINI.md                           # Master bootstrap prompt & execution rules
 ├── .gitignore                          # Exclusion rules
 └── README.md                           # Comprehensive documentation & test metrics

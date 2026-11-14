@@ -15,3 +15,13 @@
 - **Decision**: Enforce the 34-page checklist (15 Legal, 16 Customer Lifecycle, 10 UX States) across all application designs.
 - **Consequences**: High compliance and complete user journey coverage from inception.
 
+## ADR-004: Map-First Geographical Exploration Interface & Pre-Investigation Feasibility Gate
+- **Context**: Users without GIS, remote-sensing, or radar technical background need to intuitively explore, search down to village level, and select custom study areas without being overwhelmed or misled by speculative results.
+- **Decision**: 
+  1. Mandate a map-first geographic exploration interface with multi-scale hierarchical geocoding (country down to small neighborhoods and villages).
+  2. Implement 3 explicit selection modalities: Administrative boundaries, Freehand polygon drawing, and Rectangle selection (with Edit, Clear, Confirm controls).
+  3. Enforce an automatic Pre-Investigation Feasibility Check evaluating spatial swath coverage, compatible SAR repeat acquisitions ($N \ge 3$), and terrain suitability before offering an investigation.
+  4. Enforce Progressive Disclosure: Simple explanations and traffic-light cards by default; advanced radar physics and orbit geometry accessible via optional expanders.
+  5. Enforce Anti-Hallucination & Honest Status Invariant: Never imply an area has been investigated or evidence exists prior to actual processing.
+- **Consequences**: Codified in PRD v3.1 (`PRD.md`) as Section 12, Functional Requirements `FR-0` & `FR-0b`, and Non-Functional Requirements. Guides Member 2 (Backend API) and Member 3 (Frontend/Map) implementation.
+

@@ -76,3 +76,20 @@ class EvidenceStatus(str, Enum):
     INCONCLUSIVE = "inconclusive"
     UNVERIFIED = "unverified"
 
+
+class TemporalState(str, Enum):
+    PEAK = "PEAK"
+    PERSISTENT_STAGNATION = "PERSISTENT_STAGNATION"
+    RECEDING = "RECEDING"
+    RE_INUNDATED = "RE_INUNDATED"
+    RE_INUNDATED_EXPLAINED = "RE_INUNDATED_EXPLAINED"
+    RE_INUNDATED_UNEXPLAINED = "RE_INUNDATED_UNEXPLAINED"
+    DRAINED = "DRAINED"
+    MISSING = "MISSING"
+    INVALID = "INVALID"
+    UNCERTAIN = "UNCERTAIN"
+
+
+TemporalClusterState = TemporalState
+
+
